@@ -1,0 +1,134 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "APIHooks"=".\APIHooks\APIHooks.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name AnyFS
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name DebugLog
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "AnyFS"=".\AnyFS\AnyFS.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "DebugLog"=".\DebugLog\DebugLog.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "English"=".\Res\English\English.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "FtpFS"=".\FtpFS\FtpFS.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name AnyFS
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name FtpSettings
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name APIHooks
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name English
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Russian
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "FtpSettings"=".\FtpSettings\FtpSettings.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Russian"=".\Res\Russian\Russian.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "fstests"=".\fstests\fstests.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+
