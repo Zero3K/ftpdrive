@@ -1,0 +1,347 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GENERAL DIALOG DISCARDABLE  0, 0, 430, 142
+STYLE DS_SETFOREGROUND | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Автозапуск с Windows",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,4,122,10
+    CONTROL         "Предпочитать пассивный режим FTP передачи данных",
+                    IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,17,
+                    204,10
+    EDITTEXT        IDC_EDIT7,213,3,22,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "Только запрещенные:",IDC_RADIO1,"Button",
+                    BS_AUTORADIOBUTTON,15,40,101,10
+    CONTROL         "Только разрешенные:",IDC_RADIO2,"Button",
+                    BS_AUTORADIOBUTTON,123,40,103,10
+    EDITTEXT        IDC_EDIT6,10,53,222,65,ES_MULTILINE | ES_LOWERCASE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "Получать от локального NetView",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,253,14,139,10
+    CONTROL         "Получать от плагина NetView Client-Server:",IDC_CHECK4,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,253,27,159,10
+    EDITTEXT        IDC_EDIT1,308,39,117,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,308,54,117,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,308,69,117,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,308,84,117,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,395,99,29,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Редактировать список сервера \r(только если NetView недоступен)",
+                    IDC_BUTTON1,254,116,170,20,BS_MULTILINE
+    GROUPBOX        "Список приложений в которых работает FtpDrive",
+                    IDC_STATIC,5,29,230,92
+    GROUPBOX        "Список FTP серверов",IDC_STATIC,246,3,181,138
+    LTEXT           "Хост:",IDC_STATIC,265,42,40,8
+    LTEXT           "Порт:",IDC_STATIC,265,57,40,8
+    LTEXT           "Логин:",IDC_STATIC,265,72,41,8
+    LTEXT           "Пароль:",IDC_STATIC,265,87,38,8
+    LTEXT           "Минимальный период обновления, сек:",IDC_STATIC,253,102,
+                    136,8
+    RTEXT           "Буква диска:",IDC_STATIC,154,5,54,8
+    LTEXT           "Язык интерфейса:",IDC_STATIC,7,127,102,8
+    COMBOBOX        IDC_COMBO_LNG,133,124,100,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 434, 178
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,0,0,433,159
+    DEFPUSHBUTTON   "OK",IDOK,299,161,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,365,161,50,14
+    CONTROL         "",IDC_STATIC_COPYRIGHT,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,12,163,224,9
+END
+
+IDD_ADVANCED DIALOG DISCARDABLE  0, 0, 430, 142
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Кэшировать структуру каталогов",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,4,160,10
+    CONTROL         "Кэшировать содержимое файлов",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,17,159,10
+    CONTROL         "Использовать guard-страницы памяти",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,30,160,10
+    CONTROL         "Пропуск данных при переходе вперед",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,43,161,10
+    CONTROL         "Включить интерактивный контроль ошибок",IDC_CHECK6,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,56,163,10
+    CONTROL         "Загружаться во все процессы сразу",IDC_CHECK7,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,69,164,10
+    CONTROL         "Enable debug output to C:\\FtpDriveLogs",IDC_CHECK5,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,95,161,10
+    EDITTEXT        IDC_EDIT1,331,4,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT2,331,19,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,331,34,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT5,331,49,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT6,331,64,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,331,79,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,331,94,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,331,109,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,331,124,40,14,ES_AUTOHSCROLL
+    LTEXT           "Сброс кэша директорий через:",IDC_STATIC,176,7,106,8
+    LTEXT           "Сброс кэша файлов через:",IDC_STATIC,175,21,92,8
+    LTEXT           "Макс. кэшируемый размер данных файла:",IDC_STATIC,175,
+                    36,146,8
+    LTEXT           "Защитная задержка позиционирования:",IDC_STATIC,175,51,
+                    138,8
+    LTEXT           "секунд",IDC_STATIC,375,6,24,8
+    LTEXT           "секунд",IDC_STATIC,375,21,24,8
+    LTEXT           "мегабайт",IDC_STATIC,375,36,33,8
+    LTEXT           "миллискеунд",IDC_STATIC,375,51,46,8
+    LTEXT           "Таймаут бездействия соединения:",IDC_STATIC,175,66,119,
+                    8
+    LTEXT           "секунд",IDC_STATIC,375,66,24,8
+    LTEXT           "Таймаут ожидания ответа на FTP команды:",IDC_STATIC,175,
+                    81,150,8
+    LTEXT           "секунд",IDC_STATIC,375,81,24,8
+    LTEXT           "Интервал авто-повтора действия:",IDC_STATIC,175,110,116,
+                    8
+    LTEXT           "миллисекунд",IDC_STATIC,375,110,46,8
+    LTEXT           "Макс. попыток авто-повтора действия:",IDC_STATIC,175,
+                    125,134,8
+    LTEXT           "раз",IDC_STATIC,375,125,13,8
+    LTEXT           "Таймаут ожидания данных от FTP сервера:",IDC_STATIC,175,
+                    96,148,8
+    LTEXT           "секунд",IDC_STATIC,375,96,24,8
+    CONTROL         "Поддержка виртуальных десктопов",IDC_CHECK8,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,82,163,10
+    LTEXT           "Кнопка ""разморозки"":",IDC_STATIC,5,110,78,8
+    CONTROL         "HotKey1",IDC_HK_UNFREEZE,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,86,109,75,14
+END
+
+IDD_IOERROR DIALOG DISCARDABLE  0, 0, 293, 215
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | 
+    WS_CAPTION
+CAPTION "FtpDrive перехватил ошибку ввода-вывода"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Повторить операцию",ID_RETRY,13,67,130,14
+    PUSHBUTTON      "Повторять в следующие разы",IDC_RETRY_ALWAYS,13,85,130,
+                    14
+    PUSHBUTTON      "Игнорировать ошибку",ID_IGNORE,149,67,130,14
+    PUSHBUTTON      "Игнорировать в следующие разы",IDD_IGNORE_ALWAS,149,85,
+                    130,14
+    LTEXT           "Приложение:",IDC_STATIC,7,5,46,8
+    LTEXT           "Файл:",IDC_STATIC,7,20,39,8
+    LTEXT           "Операция:",IDC_STATIC,7,35,36,8
+    LTEXT           "Ошибка:",IDC_STATIC,145,35,47,8
+    LTEXT           "Позиция:",IDC_STATIC,7,50,38,8
+    LTEXT           "Размер:",IDC_STATIC,145,50,49,8
+    EDITTEXT        IDC_EDIT1,57,5,230,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,48,20,239,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,47,35,91,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT4,196,35,91,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5,47,50,91,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT6,196,50,91,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "История ответов FTP сервера",IDC_STATIC,7,103,280,105
+    EDITTEXT        IDC_CMDLOG,13,113,267,89,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_SITESEDIT DIALOG DISCARDABLE  0, 0, 393, 207
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Редактор списка FTP сайтов"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SITESLIST,14,17,125,176,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_NAME,249,18,128,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOST,249,34,128,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PORT,249,50,128,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_USER,249,66,128,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,249,82,128,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOME,249,98,128,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CONNLIMIT,249,114,128,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_ENCODING,250,130,128,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MODE,249,146,128,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Добавить",IDC_APPLY,150,186,50,14
+    PUSHBUTTON      "Удалить",IDC_DELETE,207,186,50,14
+    DEFPUSHBUTTON   "OK",IDOK,279,186,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,336,186,50,14
+    GROUPBOX        "Список сайтов",IDC_STATIC,7,7,138,193
+    GROUPBOX        "Настройки сайта",IDC_STATIC,148,7,238,176
+    LTEXT           "Отображаемое имя:",IDC_STATIC,154,20,90,8
+    LTEXT           "Адрес FTP сервера:",IDC_HOSTLABEL,154,36,90,8
+    LTEXT           "Порт FTP сервера:",IDC_STATIC,154,52,90,8
+    LTEXT           "Имя пользователя:",IDC_STATIC,154,68,90,8
+    LTEXT           "Пароль пользователя:",IDC_STATIC,154,84,90,8
+    LTEXT           "Домашний каталог:",IDC_STATIC,154,100,90,8
+    LTEXT           "Режим передачи данных:",IDC_STATIC,154,148,90,8
+    LTEXT           "Максимум подключений:",IDC_STATIC,154,116,86,8
+    LTEXT           "Кодировка имен файлов:",IDC_STATIC,154,132,86,8
+    LTEXT           "Защита соединения:",IDC_STATIC,154,164,79,8
+    COMBOBOX        IDC_SSLMODE,249,162,128,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GENERAL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 429
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_MAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 433
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_ADVANCED, DIALOG
+    BEGIN
+        RIGHTMARGIN, 374
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_IOERROR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_SITESEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_TRAY MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Настройки FTP Drive",         1
+        MENUITEM "&Отменить авто-операции",     2
+        MENUITEM "&Очистить кэши",              3
+        MENUITEM "Отменить подключения",        5
+        MENUITEM SEPARATOR
+        MENUITEM "Закрыть FTP Drive",           4
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OP_READ             "ЧТЕНИЕ"
+    IDS_OP_WRITE            "ЗАПИСЬ"
+    IDS_OP_OPEN             "ОТКРЫТИЕ"
+    IDS_OP_ENUM             "ПЕРЕЧИСЛЕНИЕ"
+    IDS_OP_GETINFO          "ПОЛУЧ. ИНФУ"
+    IDS_OP_SETINFO          "ИЗМЕН. ИНФУ"
+    IDS_HINT_STATUS         "FtpDrive\rСкорость передачи: %u %s\rПринято: %u %s\rОтправлено: %u %s"
+    IDS_HINT_KBPS           "КБ/с"
+    IDS_HINT_BPS            "Б/с"
+    IDS_HINT_MB             "МБ"
+    IDS_HINT_KB             "КБ"
+    IDS_HINT_B              "байт"
+    IDS_DLG_GEN             "Общие"
+    IDS_DLG_ADV             "Расширенные"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DLG_MAIN            "Настройи FTPDrive v%s"
+    IDS_ACT_RETRY           "ПОВТОР"
+    IDS_ACT_IGNORE          "ИГНОРИРОВАНИЕ"
+    IDS_HINT_ERROR          "Приложение: %s\rОперация: %s\rКоличество авто-действий: %u/%u\rТип авто-действий: %s"
+    IDS_HINT_TITLE_ERROR    "Ошибка ввода-вывода FtpDrive"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

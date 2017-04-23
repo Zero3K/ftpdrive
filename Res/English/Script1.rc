@@ -1,0 +1,352 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GENERAL DIALOG DISCARDABLE  0, 0, 374, 142
+STYLE DS_SETFOREGROUND | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Autostart with Windows",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,4,122,10
+    CONTROL         "Prefer passive mode for FTP data connection",IDC_CHECK2,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,17,204,10
+    EDITTEXT        IDC_EDIT7,190,3,22,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "Denied only:",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,15,
+                    40,84,10
+    CONTROL         "Allow only:",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,104,
+                    40,103,10
+    EDITTEXT        IDC_EDIT6,10,53,201,65,ES_MULTILINE | ES_LOWERCASE | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "Try retrieve from local NetView",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,225,12,139,10
+    CONTROL         "Try retrieve from NetView Client-Server:",IDC_CHECK4,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,25,139,10
+    EDITTEXT        IDC_EDIT1,285,37,81,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,285,52,81,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,285,67,81,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,285,82,81,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,339,97,26,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Edit servers list manually \r(only if NetView is not available)",
+                    IDC_EDITLOCALLIST,223,114,142,20,BS_MULTILINE
+    GROUPBOX        "Applications control list",IDC_STATIC,5,29,211,92
+    GROUPBOX        "FTP servers list",IDC_STATIC,219,1,151,138
+    LTEXT           "Host:",IDC_STATIC,239,40,40,8
+    LTEXT           "Port:",IDC_STATIC,239,55,40,8
+    LTEXT           "Login:",IDC_STATIC,239,70,41,8
+    LTEXT           "Password:",IDC_STATIC,239,85,38,8
+    LTEXT           "Minimum refresh interval, sec:",IDC_STATIC,239,100,94,8
+    RTEXT           "Drive letter:",IDC_STATIC,131,5,54,8
+    LTEXT           "Interface language:",IDC_STATIC,7,127,102,8
+    COMBOBOX        IDC_COMBO_LNG,113,124,100,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 382, 178
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,1,0,380,159
+    DEFPUSHBUTTON   "OK",IDOK,241,161,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,307,161,50,14
+    CONTROL         "",IDC_STATIC_COPYRIGHT,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,12,163,224,9
+END
+
+IDD_ADVANCED DIALOG DISCARDABLE  0, 0, 374, 142
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Enable directory structure caching",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,4,160,10
+    CONTROL         "Enable files data caching",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,17,159,10
+    CONTROL         "Use guard pages to emulate memory mapping",IDC_CHECK3,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,30,160,10
+    CONTROL         "Enable forward seek auto-bypass",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,43,161,10
+    CONTROL         "Enable IO errors interactive control for FTP files",
+                    IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,56,
+                    164,10
+    CONTROL         "Load  into system and console processes",IDC_CHECK7,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,69,164,10
+    CONTROL         "Enable debug output to C:\\FtpDriveLogs",IDC_CHECK5,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,95,161,10
+    EDITTEXT        IDC_EDIT1,285,4,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT2,285,19,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT3,285,34,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT5,285,49,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT6,285,64,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,285,79,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,285,94,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,285,109,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,285,124,40,14,ES_AUTOHSCROLL
+    LTEXT           "Directory structure cache expire:",IDC_STATIC,175,6,103,
+                    8
+    LTEXT           "Data files cache expire:",IDC_STATIC,175,21,75,8
+    LTEXT           "Maximum file size can be cached:",IDC_STATIC,175,36,107,
+                    8
+    LTEXT           "Pre-seek guard delay:",IDC_STATIC,175,51,70,8
+    LTEXT           "seconds",IDC_STATIC,329,6,28,8
+    LTEXT           "seconds",IDC_STATIC,329,21,28,8
+    LTEXT           "megabytes",IDC_STATIC,329,36,35,8
+    LTEXT           "milliseconds",IDC_STATIC,329,51,38,8
+    LTEXT           "Idle connection timeout:",IDC_STATIC,175,66,76,8
+    LTEXT           "seconds",IDC_STATIC,329,66,28,8
+    LTEXT           "FTP command replies timeout:",IDC_STATIC,175,81,96,8
+    LTEXT           "seconds",IDC_STATIC,329,81,28,8
+    LTEXT           "Auto retry interval delay:",IDC_STATIC,175,110,76,8
+    LTEXT           "milliseconds",IDC_STATIC,329,110,38,8
+    LTEXT           "Auto retry maximum retries count:",IDC_STATIC,175,125,
+                    104,8
+    LTEXT           "times",IDC_STATIC,329,125,17,8
+    LTEXT           "FTP data replies timeout:",IDC_STATIC,175,96,79,8
+    LTEXT           "seconds",IDC_STATIC,329,96,28,8
+    CONTROL         "Virtual desktops support",IDC_CHECK8,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,82,163,10
+    LTEXT           """Unfreeze"" hotkey:",IDC_STATIC,5,110,62,8
+    CONTROL         "HotKey1",IDC_HK_UNFREEZE,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,71,109,90,14
+END
+
+IDD_IOERROR DIALOG DISCARDABLE  0, 0, 293, 215
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | 
+    WS_CAPTION
+CAPTION "FtpDrive intercepted IO operation failure"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Retry IO operation",ID_RETRY,13,67,130,14
+    PUSHBUTTON      "Auto retry for same operations",IDC_RETRY_ALWAYS,13,85,
+                    130,14
+    PUSHBUTTON      "Ignore IO error",ID_IGNORE,149,67,130,14
+    PUSHBUTTON      "Auto ignore same errors",IDD_IGNORE_ALWAS,149,85,130,14
+    LTEXT           "Application:",IDC_STATIC,7,5,38,8
+    LTEXT           "File:",IDC_STATIC,7,20,39,8
+    LTEXT           "Operation:",IDC_STATIC,7,35,36,8
+    LTEXT           "Error:",IDC_STATIC,145,35,47,8
+    LTEXT           "Position:",IDC_STATIC,7,50,38,8
+    LTEXT           "Block size:",IDC_STATIC,145,50,49,8
+    EDITTEXT        IDC_EDIT1,48,5,239,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,48,20,239,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,47,35,91,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT4,196,35,91,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5,47,50,91,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT6,196,50,91,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "FTP server replies history",IDC_STATIC,7,103,280,105
+    EDITTEXT        IDC_CMDLOG,13,113,267,89,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_SITESEDIT DIALOG DISCARDABLE  0, 0, 393, 207
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "FTP sites list editor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SITESLIST,14,17,125,176,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_NAME,249,18,128,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOST,249,34,128,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PORT,249,50,128,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_USER,249,66,128,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,249,82,128,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOME,249,98,128,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CONNLIMIT,249,114,128,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_ENCODING,250,130,128,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MODE,249,146,128,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Add site",IDC_APPLY,150,186,50,14
+    PUSHBUTTON      "Delete site",IDC_DELETE,207,186,50,14
+    DEFPUSHBUTTON   "OK",IDOK,279,186,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,336,186,50,14
+    GROUPBOX        "Sites list",IDC_STATIC,7,7,138,193
+    GROUPBOX        "Site settings",IDC_STATIC,148,7,238,176
+    LTEXT           "Display name:",IDC_STATIC,154,20,90,8
+    LTEXT           "Server host:",IDC_HOSTLABEL,154,36,90,8
+    LTEXT           "Server port:",IDC_STATIC,154,52,90,8
+    LTEXT           "Login user:",IDC_STATIC,154,68,90,8
+    LTEXT           "Login password:",IDC_STATIC,154,84,90,8
+    LTEXT           "Home directory:",IDC_STATIC,154,100,90,8
+    LTEXT           "Data transfer mode:",IDC_STATIC,154,148,90,8
+    LTEXT           "Connections limit:",IDC_STATIC,154,116,56,8
+    LTEXT           "Files names encoding:",IDC_STATIC,154,132,71,8
+    LTEXT           "Secure connection:",IDC_STATIC,154,164,79,8
+    COMBOBOX        IDC_SSLMODE,249,162,128,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GENERAL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 373
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_MAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 381
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_ADVANCED, DIALOG
+    BEGIN
+        RIGHTMARGIN, 373
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_IOERROR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_SITESEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_TRAY MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "FTP Drive settings",          1
+        MENUITEM "&Reset pending auto-actions", 2
+        MENUITEM "&Clear all caches",           3
+        MENUITEM "Cancel pending connections",  5
+        MENUITEM SEPARATOR
+        MENUITEM "Close FTP Drive",             4
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OP_READ             "READ"
+    IDS_OP_WRITE            "WRITE"
+    IDS_OP_OPEN             "OPEN"
+    IDS_OP_ENUM             "ENUM"
+    IDS_OP_GETINFO          "GETINFO"
+    IDS_OP_SETINFO          "SETINFO"
+    IDS_HINT_STATUS         "FtpDrive\rCurrent speed: %u %s\rReceived: %u %s\rSent: %u %s"
+    IDS_HINT_KBPS           "KBPS"
+    IDS_HINT_BPS            "BPS"
+    IDS_HINT_MB             "MB"
+    IDS_HINT_KB             "KB"
+    IDS_HINT_B              "bytes"
+    IDS_DLG_GEN             "General"
+    IDS_DLG_ADV             "Advanced"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DLG_MAIN            "FTPDrive v%s settings"
+    IDS_ACT_RETRY           "RETRY"
+    IDS_ACT_IGNORE          "IGNORE"
+    IDS_HINT_ERROR          "Application: %s\rOperation: %s\rAuto-actions count: %u/%u\rAuto-action type: %s"
+    IDS_HINT_TITLE_ERROR    "FtpDrive IO failure auto-action"
+END
+
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
